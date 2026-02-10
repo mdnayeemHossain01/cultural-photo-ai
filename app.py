@@ -19,7 +19,7 @@ def get_cultural_prompt(country, occasion, user_desc):
         return None
     
     genai.configure(api_key=gemini_key)
-    model = genai.GenerativeModel('gemini-2.0-flash') # Fast & Free
+    model = genai.GenerativeModel('gemini-1.5-flash') # Fast & Free
     
     # This prompt tells Gemini to act as a cultural consultant
     prompt = f"""
