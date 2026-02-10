@@ -21,9 +21,9 @@ def get_cultural_prompt(country, occasion, user_desc):
     # Configure Gemini with the key
     genai.configure(api_key=gemini_key)
     
-    # We use 'gemini-1.5-flash' because it is fast and free
+    # FIX: Using 'gemini-pro' (The most stable version)
     try:
-        model = genai.GenerativeModel('gemini-1.5-flash')
+        model = genai.GenerativeModel('gemini-pro')
         
         prompt = f"""
         Act as a professional cultural photographer.
